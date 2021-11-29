@@ -58,7 +58,7 @@ A cross-platform [SFML](https://www.sfml-dev.org) 2.5.1, [GLEW](https://github.c
 ### Windows
 
 1. Download & Extract SFML to **C:/SFML-2.5.1/** where the bin/lib/include folders are contained within
-2. Download & Extract GLEW to **C:/glew-2.1.0/** where the bin/lib/include folders are contained within
+2. Download & Extract GLEW to **C:/glew-2.2.0/** where the bin/lib/include folders are contained within
 3. Download & Extract GLM to **C:/glm/** where the glm and other folders are contained within
 4. Download & Extract MinGW to **C:/mingw32/** where the bin/lib/include folders are contained within
 
