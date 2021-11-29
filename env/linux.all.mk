@@ -9,8 +9,7 @@ INCLUDE_DIRS := \
 
 BUILD_FLAGS := \
 	$(BUILD_FLAGS) \
-	-pthread
-
+	-pthread -lGLEW -lGLU -lGL
 LINK_LIBRARIES := \
 	$(LINK_LIBRARIES) \
 	stdc++fs \
