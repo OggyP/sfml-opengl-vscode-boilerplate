@@ -1,5 +1,7 @@
 # SFML OpenGL VScode Boilderplate
 
+This project was forked from [andrew-r-king/sfml-vscode-boilerplate](https://github.com/andrew-r-king/sfml-vscode-boilerplate) to make it easier to create cross platform Open GL applications in C++ using SFML.
+
 A cross-platform [SFML](https://www.sfml-dev.org) 2.5.1, [GLEW](https://github.com/nigels-com/glew) 2.2.0, [GLM](https://glm.g-truc.net/0.9.9/index.html) & C++17 build environment for [Visual Studio Code](https://code.visualstudio.com/)
 
 > Note: This project will be archived soon (December 2021) and will have a new, much simpler replacement.
