@@ -4,7 +4,7 @@ This project was forked from [andrew-r-king/sfml-vscode-boilerplate](https://git
 
 A cross-platform [SFML](https://www.sfml-dev.org) 2.5.1, [GLEW](https://github.com/nigels-com/glew) 2.2.0, [GLM](https://glm.g-truc.net/0.9.9/index.html) & C++17 build environment for [Visual Studio Code](https://code.visualstudio.com/)
 
-> Note: This project will be archived soon (December 2021) and will have a new, much simpler replacement.
+> Note: This project will be archived soon (March 2022) and will have a new, much simpler replacement.
 
 ---
 
@@ -93,7 +93,7 @@ A cross-platform [SFML](https://www.sfml-dev.org) 2.5.1, [GLEW](https://github.c
 
 At this point, everything you need is installed
 
-1. Open the **sfml-vscode-boilerplate** folder in VS Code. You should see an lime-green status bar at the bottom (color-picked from the SFML logo).
+1. Open the **sfml-vscode-boilerplate** folder in VS Code.
 2. With Main.cpp (or any source file) open, check the lower-right to ensure "Win32/Mac/Linux" is the configuration set (this should be auto-selected by the C++ plugin). If it is not correct, hit **Ctrl+Shift+B** and select **C/Cpp: Select a configuration...** and choose the platform you're working on.
 3. At this point you should be able to run a build task (**Ctrl+Shift+B** > **Build & Run**), but it'll be nicer to add keybindings for these tasks so you can build with 1 keypress.
 4. Open the .vscode folder and click on the **\_keybindings.json** file. This is not an officially recognized file, but just contains the keybindings you can copy into the actual keybindings.json file.
@@ -617,7 +617,7 @@ pacman -S mingw-w64-i686-toolchain mingw-w64-x86_64-toolchain mingw-w64-i686-ope
 ```
 
 5. That will install both x86 & x64 versions (so you can try both) of GCC 10.1.0 (as of 5/16/20). It may take a while, but once finished, exit msys2.
-6. Build SFML. To start with, install CMake & doxygen (64 bit version). Then download [this script](https://gist.github.com/andrew-r-king/5f8ea0eda064cbfb33f4f5d373011e0b) and edit the GCC_DIR line to either "/c/msys64/mingw64/bin" or "/c/msys64/mingw32/bin" depending on which architecture you want to target. Run the script, and if all goes well, you should have a compiled version of SFML in C:/SFML/2.5.1. You can also build from "master" instead by calling the script with that as a parameter.
+6. Build SFML. To start with, install CMake & doxygen (64 bit version). Then download [this script](https://gist.github.com/rewrking/5f8ea0eda064cbfb33f4f5d373011e0b) and edit the GCC_DIR line to either "/c/msys64/mingw64/bin" or "/c/msys64/mingw32/bin" depending on which architecture you want to target. Run the script, and if all goes well, you should have a compiled version of SFML in C:/SFML/2.5.1. You can also build from "master" instead by calling the script with that as a parameter.
 7. rename that folder so its architecture specific. For my own build, I did "C:/SFML-2.5.1-gcc-10.1.0/mingw64"
 8. Open sfml-vscode-boilerplate in VS Code, go into settings.json and comment out ".vscode/launch.json in "files.exclude", because we need to edit it. Also comment out "build.sh"
 9. Also in settings.json, go down to "terminal.integrated.env.windows" and change it to "C:/msys64/mingw64/bin;C:/SFML-2.5.1-gcc-10.1.0/mingw64/bin" (the new paths)
